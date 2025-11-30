@@ -26,9 +26,9 @@ Here is the main screenshot of the application:
 ## error handling.
 ![Example Output](src/images/img5.jpeg)
 ## terminal admin server side
-![Example Output](src/images/img6.jpg)
+![Example Output](src/images/img6.JPG)
 ## terminal client side
-![Example Output](src/images/img7.jpg)
+![Example Output](src/images/img7.JPG)
 
 Python 3.8 or higher (check with python --version)
 A terminal (PowerShell, CMD, or bash)
