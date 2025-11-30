@@ -1,0 +1,161 @@
+/* --- Global Reset & Background --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* A slightly richer gradient */
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: #fff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* changed height to min-height for scrolling on small screens */
+}
+
+/* --- The Glass Card --- */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    /* This is the magic property for the "Frosted" look */
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px);
+    
+    padding: 2.5rem;
+    border-radius: 20px;
+    
+    /* A subtle border makes the glass edge pop */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    
+    width: 100%;
+    max-width: 400px; /* Responsive: Won't get wider than 400, but can get smaller */
+    text-align: center;
+    
+    /* Animation: Fade in when page loads */
+    animation: fadeIn 0.8s ease-out;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* --- Form Elements --- */
+select, input[type="number"], input[type="submit"], .back-button {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none; /* Remove default browser outline */
+    transition: all 0.3s ease;
+}
+
+/* Input Fields */
+select, input[type="number"] {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+/* Fix for black text in dropdown options on Windows */
+select option {
+    background-color: #2a5298;
+    color: white;
+}
+
+input[type="number"]::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Focus State: When user clicks the box */
+select:focus, input[type="number"]:focus {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: #00c6ff;
+    box-shadow: 0 0 10px rgba(0, 198, 255, 0.3);
+}
+
+/* --- Buttons --- */
+input[type="submit"], .back-button {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block; /* Helps back-button behave like a button */
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 114, 255, 0.3);
+}
+
+input[type="submit"]:hover, .back-button:hover {
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 6px 20px rgba(0, 114, 255, 0.5);
+}
+
+input[type="submit"]:active {
+    transform: translateY(0); /* Button presses down */
+}
+
+/* --- Result Table --- */
+table {
+    width: 100%;
+    border-collapse: separate; /* Allows for border radius on rows if needed */
+    border-spacing: 0 8px; /* Space between rows */
+    margin-top: 1.5rem;
+}
+
+tr {
+    background: rgba(0, 0, 0, 0.1);
+    transition: background 0.2s;
+}
+
+tr:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* First cell (Labels) */
+th {
+    text-align: left;
+    padding: 12px;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px 0 0 8px; /* Rounded corners left */
+}
+
+/* Second cell (Values) */
+td {
+    text-align: right;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 0 8px 8px 0; /* Rounded corners right */
+}
+
+/* --- Alerts --- */
+.alert-error {
+    background: rgba(220, 53, 69, 0.2);
+    border: 1px solid rgba(220, 53, 69, 0.4);
+    color: #ffcccc;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+/* --- Animations --- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+        padding: 1.5rem;
+    }
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API GABI</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>The Lebowski API</h1>
+        <form method="post">
+            <select name="product" required>
+                {% for name in products %}
+                    <option value="{{ name }}">{{ name }}</option>
+                {% endfor %}
+            </select>
+            <input type="number" name="order_qty" placeholder="Quantity">
+            <input type="submit" value="Send">
+        </form>
+    </div>
+</body>
+</html>

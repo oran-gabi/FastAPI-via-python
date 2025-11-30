@@ -1,0 +1,18 @@
+# FastAPI and Server
+fastapi==0.115.0
+uvicorn[standard]==0.32.0
+
+# HTTP Client
+requests==2.32.3
+
+# Template Engine
+jinja2==3.1.4
+
+# Form Data Parsing
+python-multipart==0.0.17
+
+# Data Validation
+pydantic==2.9.2
+
+# Optional but recommended for production
+python-dotenv==1.0.1  # Environment variables
