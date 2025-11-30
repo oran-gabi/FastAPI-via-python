@@ -30,6 +30,7 @@ Here is the main screenshot of the application:
 ## terminal client side
 ![Example Output](src/images/img7.JPG)
 
+
 Python 3.8 or higher (check with python --version)
 A terminal (PowerShell, CMD, or bash)
 A web browser (you already have this! 😄)
@@ -42,6 +43,17 @@ bashcd your-project-folder
 bash# Windows
 python -m venv api_env
 api_env\Scripts\activate
+
+💡 What You Can Learn From This
+This project is great for learning:
+
+FastAPI basics - modern Python web framework
+RESTful APIs - how apps talk to each other
+Client-Server architecture - separating frontend and backend
+Templating with Jinja2 - dynamic HTML generation
+Data validation with Pydantic - keeping your data clean
+Error handling - dealing with things that go wrong
+Real-world patterns - inventory management, order processing
 
 # Mac/Linux
 python3 -m venv api_env
@@ -140,16 +152,7 @@ Check both terminals - are they still running?
 Any error messages in red?
 Try refreshing the page (Ctrl+R or Cmd+R)
 
-💡 What You Can Learn From This
-This project is great for learning:
 
-FastAPI basics - modern Python web framework
-RESTful APIs - how apps talk to each other
-Client-Server architecture - separating frontend and backend
-Templating with Jinja2 - dynamic HTML generation
-Data validation with Pydantic - keeping your data clean
-Error handling - dealing with things that go wrong
-Real-world patterns - inventory management, order processing
 
 🔮 Ideas for Expansion
 Want to take this further? Here are some ideas:
