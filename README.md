@@ -3,6 +3,8 @@ Hey there! Welcome to the Food Store API project. This is a full-stack web appli
 🎯 What Does This Do?
 Ever wondered how food ordering apps work behind the scenes? This project shows you exactly that! You get:
 
+
+
 A backend API that manages your food inventory (pizzas, burgers, beers, fries)
 A beautiful web interface where customers can place orders
 Real-time stock tracking so you never oversell
@@ -11,6 +13,22 @@ Automatic price calculations for orders
 It's basically a simplified version of what restaurants use to track their inventory and orders.
 🚀 Getting Started
 What You'll Need
+## Project Screenshots
+
+Here is the main screenshot of the application:
+
+## select from inventory 
+![Main Application Screenshot](src/images/img1.jpeg)
+## Get Orders status that can be delivered with reducing quantity from stock
+![API Docs Screenshot](src/images/img2.jpeg)
+
+![Example Output](src/images/img3.jpeg)
+## error handling.
+![Example Output](src/images/img5.jpeg)
+## terminal admin server side
+![Example Output](src/images/img6.jpg)
+## terminal client side
+![Example Output](src/images/img7.jpg)
 
 Python 3.8 or higher (check with python --version)
 A terminal (PowerShell, CMD, or bash)
@@ -132,3 +150,17 @@ Templating with Jinja2 - dynamic HTML generation
 Data validation with Pydantic - keeping your data clean
 Error handling - dealing with things that go wrong
 Real-world patterns - inventory management, order processing
+
+🔮 Ideas for Expansion
+Want to take this further? Here are some ideas:
+
+Add user authentication (login/signup)
+Connect to a real database (SQLite, PostgreSQL)
+Add a shopping cart (order multiple items at once)
+Send email confirmations
+Add product images
+Create an admin dashboard
+Add payment processing
+Track order history
+Implement delivery tracking
+Add product reviews and ratings
